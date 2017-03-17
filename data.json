@@ -1,0 +1,595 @@
+
+{
+  "elements": {
+    "H": {
+        "Name": "Hydrogen",
+        "AtomicNumber": 1,
+        "MolecularMass": 1.008
+    },
+    "He": {
+        "Name": "Helium",
+        "AtomicNumber": 2,
+        "MolecularMass": 4.002602
+    },
+    "Li": {
+        "Name": "Lithium",
+        "AtomicNumber": 3,
+        "MolecularMass": 6.94
+    },
+    "Be": {
+        "Name": "Beryllium",
+        "AtomicNumber": 4,
+        "MolecularMass": 9.0121831
+    },
+    "B": {
+        "Name": "Boron",
+        "AtomicNumber": 5,
+        "MolecularMass": 10.811
+    },
+    "C": {
+        "Name": "Carbon",
+        "AtomicNumber": 6,
+        "MolecularMass": 12.0107
+    },
+    "N": {
+        "Name": "Nitrogen",
+        "AtomicNumber": 7,
+        "MolecularMass": 14.0067
+    },
+    "O": {
+        "Name": "Oxygen",
+        "AtomicNumber": 8,
+        "MolecularMass": 15.9994
+    },
+    "F": {
+        "Name": "Fluorine",
+        "AtomicNumber": 9,
+        "MolecularMass": 18.9984
+    },
+    "Ne": {
+        "Name": "Neon",
+        "AtomicNumber": 10,
+        "MolecularMass": 20.1797
+    },
+    "Na": {
+        "Name": "Sodium",
+        "AtomicNumber": 11,
+        "MolecularMass": 22.9897
+    },
+    "Mg": {
+        "Name": "Magnesium",
+        "AtomicNumber": 12,
+        "MolecularMass": 24.305
+    },
+    "Al": {
+        "Name": "Aluminum",
+        "AtomicNumber": 13,
+        "MolecularMass": 26.9815
+    },
+    "Si": {
+        "Name": "Silicon",
+        "AtomicNumber": 14,
+        "MolecularMass": 28.0855
+    },
+    "P": {
+        "Name": "Phosphorus",
+        "AtomicNumber": 15,
+        "MolecularMass": 30.9738
+    },
+    "S": {
+        "Name": "Sulfur",
+        "AtomicNumber": 16,
+        "MolecularMass": 32.065
+    },
+    "Cl": {
+        "Name": "Chlorine",
+        "AtomicNumber": 17,
+        "MolecularMass": 35.453
+    },
+    "Ar": {
+        "Name": "Argon",
+        "AtomicNumber": 18,
+        "MolecularMass": 39.948
+    },
+    "K": {
+        "Name": "Potassium",
+        "AtomicNumber": 19,
+        "MolecularMass": 39.0983
+    },
+    "Ca": {
+        "Name": "Calcium",
+        "AtomicNumber": 20,
+        "MolecularMass": 40.078
+    },
+    "Sc": {
+        "Name": "Scandium",
+        "AtomicNumber": 21,
+        "MolecularMass": 44.9559
+    },
+    "Ti": {
+        "Name": "Titanium",
+        "AtomicNumber": 22,
+        "MolecularMass": 47.867
+    },
+    "V": {
+        "Name": "Vanadium",
+        "AtomicNumber": 23,
+        "MolecularMass": 50.9415
+    },
+    "Cr": {
+        "Name": "Chromium",
+        "AtomicNumber": 24,
+        "MolecularMass": 51.9961
+    },
+    "Mn": {
+        "Name": "Manganese",
+        "AtomicNumber": 25,
+        "MolecularMass": 54.938
+    },
+    "Fe": {
+        "Name": "Iron",
+        "AtomicNumber": 26,
+        "MolecularMass": 55.845
+    },
+    "Co": {
+        "Name": "Colbolt",
+        "AtomicNumber": 27,
+        "MolecularMass": 58.9332
+    },
+    "Ni": {
+        "Name": "Nickel",
+        "AtomicNumber": 28,
+        "MolecularMass": 58.6934
+    },
+    "Cu": {
+        "Name": "Copper",
+        "AtomicNumber": 29,
+        "MolecularMass": 63.546
+    },
+    "Zn": {
+        "Name": "Zinc",
+        "AtomicNumber": 30,
+        "MolecularMass": 65.39
+    },
+    "Ga": {
+        "Name": "Gallium",
+        "AtomicNumber": 31,
+        "MolecularMass": 69.723
+    },
+    "Ge": {
+        "Name": "Germanium",
+        "AtomicNumber": 32,
+        "MolecularMass": 72.64
+    },
+    "As": {
+        "Name": "Arsenic",
+        "AtomicNumber": 33,
+        "MolecularMass": 74.9216
+    },
+    "Se": {
+        "Name": "Selenium",
+        "AtomicNumber": 34,
+        "MolecularMass": 78.96
+    },
+    "Br": {
+        "Name": "Bromine",
+        "AtomicNumber": 35,
+        "MolecularMass": 79.904
+    },
+    "Kr": {
+        "Name": "Krypton",
+        "AtomicNumber": 36,
+        "MolecularMass": 83.8
+    },
+    "Rb": {
+        "Name": "Rubidium",
+        "AtomicNumber": 37,
+        "MolecularMass": 85.4678
+    },
+    "Sr": {
+        "Name": "Strontium",
+        "AtomicNumber": 38,
+        "MolecularMass": 87.62
+    },
+    "Y": {
+        "Name": "Yttrium",
+        "AtomicNumber": 39,
+        "MolecularMass": 88.9059
+    },
+    "Zr": {
+        "Name": "Zirconium",
+        "AtomicNumber": 40,
+        "MolecularMass": 91.224
+    },
+    "Nb": {
+        "Name": "Niobium",
+        "AtomicNumber": 41,
+        "MolecularMass": 92.9064
+    },
+    "Mo": {
+        "Name": "Molybdenum",
+        "AtomicNumber": 42,
+        "MolecularMass": 95.94
+    },
+    "Tc": {
+        "Name": "Technetium",
+        "AtomicNumber": 43,
+        "MolecularMass": 98.0
+    },
+    "Ru": {
+        "Name": "Ruthenium",
+        "AtomicNumber": 44,
+        "MolecularMass": 101.07
+    },
+    "Rh": {
+        "Name": "Rhodium",
+        "AtomicNumber": 45,
+        "MolecularMass": 102.9055
+    },
+    "Pd": {
+        "Name": "Palladium",
+        "AtomicNumber": 46,
+        "MolecularMass": 106.42
+    },
+    "Ag": {
+        "Name": "Silver",
+        "AtomicNumber": 47,
+        "MolecularMass": 107.8682
+    },
+    "Cd": {
+        "Name": "Cadmium",
+        "AtomicNumber": 48,
+        "MolecularMass": 112.411
+    },
+    "In": {
+        "Name": "Indium",
+        "AtomicNumber": 49,
+        "MolecularMass": 114.818
+    },
+    "Sn": {
+        "Name": "Tin",
+        "AtomicNumber": 50,
+        "MolecularMass": 118.71
+    },
+    "Sb": {
+        "Name": "Antimony",
+        "AtomicNumber": 51,
+        "MolecularMass": 121.76
+    },
+    "Te": {
+        "Name": "Tellurium",
+        "AtomicNumber": 52,
+        "MolecularMass": 127.6
+    },
+    "I": {
+        "Name": "Iodine",
+        "AtomicNumber": 53,
+        "MolecularMass": 126.9045
+    },
+    "Xe": {
+        "Name": "Xenon",
+        "AtomicNumber": 54,
+        "MolecularMass": 131.293
+    },
+    "Cs": {
+        "Name": "Cesium",
+        "AtomicNumber": 55,
+        "MolecularMass": 132.9055
+    },
+    "Ba": {
+        "Name": "Barium",
+        "AtomicNumber": 56,
+        "MolecularMass": 137.327
+    },
+    "La": {
+        "Name": "Lanthanum",
+        "AtomicNumber": 57,
+        "MolecularMass": 138.9055
+    },
+    "Ce": {
+        "Name": "Cerium",
+        "AtomicNumber": 58,
+        "MolecularMass": 140.116
+    },
+    "Pr": {
+        "Name": "Praseodymium",
+        "AtomicNumber": 59,
+        "MolecularMass": 140.9077
+    },
+    "Nd": {
+        "Name": "Neodymium",
+        "AtomicNumber": 60,
+        "MolecularMass": 144.24
+    },
+    "Pm": {
+        "Name": "Promethium",
+        "AtomicNumber": 61,
+        "MolecularMass": 145.0
+    },
+    "Sm": {
+        "Name": "Samarium",
+        "AtomicNumber": 62,
+        "MolecularMass": 150.36
+    },
+    "Eu": {
+        "Name": "Europium",
+        "AtomicNumber": 63,
+        "MolecularMass": 151.964
+    },
+    "Gd": {
+        "Name": "Gadolinium",
+        "AtomicNumber": 64,
+        "MolecularMass": 157.25
+    },
+    "Tb": {
+        "Name": "Terbium",
+        "AtomicNumber": 65,
+        "MolecularMass": 158.9253
+    },
+    "Dy": {
+        "Name": "Dysprosium",
+        "AtomicNumber": 66,
+        "MolecularMass": 162.5
+    },
+    "Ho": {
+        "Name": "Holmium",
+        "AtomicNumber": 67,
+        "MolecularMass": 164.9303
+    },
+    "Er": {
+        "Name": "Erbium",
+        "AtomicNumber": 68,
+        "MolecularMass": 167.259
+    },
+    "Tm": {
+        "Name": "Thulium",
+        "AtomicNumber": 69,
+        "MolecularMass": 168.9342
+    },
+    "Yb": {
+        "Name": "Ytterbium",
+        "AtomicNumber": 70,
+        "MolecularMass": 173.04
+    },
+    "Lu": {
+        "Name": "Lutetium",
+        "AtomicNumber": 71,
+        "MolecularMass": 174.967
+    },
+    "Hf": {
+        "Name": "Hafnium",
+        "AtomicNumber": 72,
+        "MolecularMass": 178.49
+    },
+    "Ta": {
+        "Name": "Tantalum",
+        "AtomicNumber": 73,
+        "MolecularMass": 180.9479
+    },
+    "W": {
+        "Name": "Tungsten",
+        "AtomicNumber": 74,
+        "MolecularMass": 183.84
+    },
+    "Re": {
+        "Name": "Rhenium",
+        "AtomicNumber": 75,
+        "MolecularMass": 186.207
+    },
+    "Os": {
+        "Name": "Osmium",
+        "AtomicNumber": 76,
+        "MolecularMass": 190.23
+    },
+    "Ir": {
+        "Name": "Iridium",
+        "AtomicNumber": 77,
+        "MolecularMass": 192.217
+    },
+    "Pt": {
+        "Name": "Platinum",
+        "AtomicNumber": 78,
+        "MolecularMass": 195.078
+    },
+    "Au": {
+        "Name": "Gold",
+        "AtomicNumber": 79,
+        "MolecularMass": 196.9665
+    },
+    "Hg": {
+        "Name": "Mercury",
+        "AtomicNumber": 80,
+        "MolecularMass": 200.59
+    },
+    "Ti": {
+        "Name": "Thallium",
+        "AtomicNumber": 81,
+        "MolecularMass": 204.3833
+    },
+    "Pb": {
+        "Name": "Lead",
+        "AtomicNumber": 82,
+        "MolecularMass": 207.2
+    },
+    "Bi": {
+        "Name": "Bismuth",
+        "AtomicNumber": 83,
+        "MolecularMass": 208.9804
+    },
+    "Po": {
+        "Name": "Polonium",
+        "AtomicNumber": 84,
+        "MolecularMass": 209.0
+    },
+    "At": {
+        "Name": "Astatine",
+        "AtomicNumber": 85,
+        "MolecularMass": 210.0
+    },
+    "Rn": {
+        "Name": "Radon",
+        "AtomicNumber": 86,
+        "MolecularMass": 222.0
+    },
+    "Fr": {
+        "Name": "Francium",
+        "AtomicNumber": 87,
+        "MolecularMass": 223.0
+    },
+    "Ra": {
+        "Name": "Radium",
+        "AtomicNumber": 88,
+        "MolecularMass": 226.0
+    },
+    "Ac": {
+        "Name": "Actinium",
+        "AtomicNumber": 89,
+        "MolecularMass": 227
+    },
+    "Th": {
+        "Name": "Thorium",
+        "AtomicNumber": 90,
+        "MolecularMass": 232.0381
+    },
+    "Pa": {
+        "Name": "Protactinium",
+        "AtomicNumber": 91,
+        "MolecularMass": 231.0359
+    },
+    "U": {
+        "Name": "Uranium",
+        "AtomicNumber": 92,
+        "MolecularMass": 238.0289
+    },
+    "Np": {
+        "Name": "Neptunium",
+        "AtomicNumber": 93,
+        "MolecularMass": 237.0
+    },
+    "Pu": {
+        "Name": "Plutonium",
+        "AtomicNumber": 94,
+        "MolecularMass": 244.0
+    },
+    "Am": {
+        "Name": "Americium",
+        "AtomicNumber": 95,
+        "MolecularMass": 243.0
+    },
+    "Cm": {
+        "Name": "Curium",
+        "AtomicNumber": 96,
+        "MolecularMass": 247.0
+    },
+    "Bk": {
+        "Name": "Berkelium",
+        "AtomicNumber": 97,
+        "MolecularMass": 247.0
+    },
+    "Cf": {
+        "Name": "Californium",
+        "AtomicNumber": 98,
+        "MolecularMass": 251.0
+    },
+    "Es": {
+        "Name": "Einsteinium",
+        "AtomicNumber": 99,
+        "MolecularMass": 252.0
+    },
+    "Fm": {
+        "Name": "Fermium",
+        "AtomicNumber": 100,
+        "MolecularMass": 257.0
+    },
+    "Md": {
+        "Name": "Mendelevium",
+        "AtomicNumber": 101,
+        "MolecularMass": 258.0
+    },
+    "No": {
+        "Name": "Nobelium",
+        "AtomicNumber": 102,
+        "MolecularMass": 259.0
+    },
+    "Lr": {
+        "Name": "Lawrencium",
+        "AtomicNumber": 103,
+        "MolecularMass": 262.0
+    },
+    "Rf": {
+        "Name": "Rutherfordium",
+        "AtomicNumber": 104,
+        "MolecularMass": 261.0
+    },
+    "Db": {
+        "Name": "Dubnium",
+        "AtomicNumber": 105,
+        "MolecularMass": 262.0
+    },
+    "Sg": {
+        "Name": "Seaborgium",
+        "AtomicNumber": 106,
+        "MolecularMass": 266.0
+    },
+    "Bh": {
+        "Name": "Bohrium",
+        "AtomicNumber": 107,
+        "MolecularMass": 264.0
+    },
+    "Hs": {
+        "Name": "Hassium",
+        "AtomicNumber": 108,
+        "MolecularMass": 277.0
+    },
+    "Mt": {
+        "Name": "Meitnerium",
+        "AtomicNumber": 109,
+        "MolecularMass": 268.0
+    },
+    "Ds": {
+        "Name": "Darmstadtium",
+        "AtomicNumber": 110,
+        "MolecularMass": "Unknown"
+    },
+    "Rg": {
+        "Name": "Roentgenium",
+        "AtomicNumber": 111,
+        "MolecularMass": 272.0
+    },
+    "Uub": {
+        "Name": "Ununbium",
+        "AtomicNumber": 112,
+        "MolecularMass": "Unknown"
+    },
+    "Uut": {
+        "Name": "Ununtrium",
+        "AtomicNumber": 113,
+        "MolecularMass": "Unknown"
+    },
+    "Uub": {
+        "Name": "Ununquadium",
+        "AtomicNumber": 114,
+        "MolecularMass": "Unknown"
+    },
+    "Uub": {
+        "Name": "Ununpentium",
+        "AtomicNumber": 115,
+        "MolecularMass": "Unknown"
+    },
+    "Uub": {
+        "Name": "Ununhexium",
+        "AtomicNumber": 116,
+        "MolecularMass": "Unknown"
+    },
+    "Uub": {
+        "Name": "Ununseptium",
+        "AtomicNumber": 117,
+        "MolecularMass": "Unknown"
+    },
+    "Uub": {
+        "Name": "Ununoctium",
+        "AtomicNumber": 118,
+        "MolecularMass": "Unknown"
+    }
+  }
+}
