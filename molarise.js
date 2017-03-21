@@ -2,9 +2,24 @@
 //
 
 //    JSON parsing
+/*
 var fs=require('fs'),
     file=fs.readFileSync('data.json'),
     data=JSON.parse(file);
+*/
+function getData(){
+    $(document).ready(function() {
+        $.getJSON('data.json', function(dataJSON) {
+            data = dataJSON;
+        });
+    });
+    return data
+};
+
+
+
+
+
 //  isend function
 function isend(string ,i) {
     var endres = true;
@@ -71,7 +86,6 @@ function findnum(string, i) {
             } else {
                 if (isdigit(string, l+2) != true) { 
                     num = 1;
-                    console.log("test")
                 } else {
                     if (isend(string, l+2) == true) {
                         num = 2;
@@ -90,10 +104,6 @@ function findnum(string, i) {
         result = 1;
     } else {
         result = string.substr(i+1, num);
-        console.log("result => " + result)
-        console.log("i => " + i)
-        console.log("num => " + num)
-
     };
     return result
 };
@@ -105,20 +115,14 @@ function elemt_con(formula) {
     chem_table = {};
     while (fn < formula.length) {
         elemt = findatom(formula, fn);
-                console.log("\n element => " + elemt)
         if (elemt == false) {
             fn += 1;
         } else {
             if (elemt.length == 1) {
                 num = findnum(formula, fn);
-                console.log("findnum1 => " + num + " " + fn)
             } else {
                 num = findnum(formula, fn+1);
-                console.log("findnum => " + num + " " + fn)
             };
-
-
-
             if (isNaN(chem_table[elemt]) == true){
                 chem_table[elemt] = num;
             }
@@ -130,17 +134,15 @@ function elemt_con(formula) {
             } else {
                 fn += elemt.length + num.toString().length;
             };
-      
         };
     };
     return chem_table
 };
 //var fn = 0;
 //console.log(findnum("NaTH", 3));
-
 //    startfunction
-function start(){
-    var formula = "CHCHCHCH",   // input would be here
+function getMr(form){
+    var formula = form,   // input would be here
         result = 0,
         end_value = 0,
         fn = 0,
@@ -149,16 +151,16 @@ function start(){
         mr_value = 0;
         chem_table = elemt_con(formula);
     molecularMass_sum = {};
-    for (var element in chem_table) {
+    for (element in chem_table) {
         no_atoms = parseInt(chem_table[element]);                    //could be wrong
         mr_value = data.elements[element].MolecularMass;
         result = no_atoms * mr_value;
         end_value += result;
     };
-    console.log(chem_table);
+    document.getElementById("answerMr").innerHTML = end_value;
 };
-start();
 
-//var testvar ="CH3";
-//console.log(findnum(testvar, 1))
-console.log(30)
+
+
+
+//getmr()
