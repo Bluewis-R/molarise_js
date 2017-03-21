@@ -129,11 +129,17 @@ function elemt_con(formula) {
             else {
                 chem_table[elemt] = parseInt(num) + parseInt(chem_table[elemt]);
             }
+            
             if (isexcl(formula, fn) == true) {             //or formula???
                 fn += elemt.length;
+                console.log(elemt.length)
             } else {
                 fn += elemt.length + num.toString().length;
+                console.log(elemt.length + num.toString().length;)
             };
+            
+        //console.log("elemt, num, chem_table[elemt]");
+        //console.log(elemt + " " + num + " " + chem_table[elemt]);
         };
     };
     return chem_table
@@ -151,7 +157,7 @@ function getMr(form){
         mr_value = 0;
         chem_table = elemt_con(formula);
     molecularMass_sum = {};
-    for (element in chem_table) {
+    for (var element in chem_table) {
         no_atoms = parseInt(chem_table[element]);                    //could be wrong
         mr_value = data.elements[element].MolecularMass;
         result = no_atoms * mr_value;
