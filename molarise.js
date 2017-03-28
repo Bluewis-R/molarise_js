@@ -15,11 +15,6 @@ function getData(){
     });
     return data
 };
-
-
-
-
-
 //  isend function
 function isend(string ,i) {
     var endres = true;
@@ -89,78 +84,62 @@ function findnum(string, i) {
                 } else {
                     if (isend(string, l+2) == true) {
                         num = 2;
-                    } else {
-                        if (isdigit(string, l+3) != true) {
-                            num = 2;
-                        } else {
-                            num = 3;
-                        };
-                    };
-                };
-            };
-        };
-    };
-    if (excl == true) {
+function findnum(string, i) {
         result = 1;
     } else {
         result = string.substr(i+1, num);
     };
     return result
 };
-//      elemt_con() 
 function elemt_con(formula) {
-    var excl = false,
-        fn = 0,
-        elemt = "",
     chem_table = {};
     while (fn < formula.length) {
         elemt = findatom(formula, fn);
         if (elemt == false) {
             fn += 1;
         } else {
+            
             if (elemt.length == 1) {
-                num = findnum(formula, fn);
+                num = findnum(formula, fn);     //  <== FIND NUM
             } else {
-                num = findnum(formula, fn+1);
+                num = findnum(formula, fn+1);   //  <== FIND NUM
             };
+            
+            
             if (isNaN(chem_table[elemt]) == true){
-                chem_table[elemt] = num;
+                chem_table[elemt] = num;                
             }
             else {
-                chem_table[elemt] = parseInt(num) + parseInt(chem_table[elemt]);
+                chem_table[elemt] = parseInt(num) + parseInt(chem_table[elemt]);   
             }
-            if (isexcl(formula, fn) == true) {             //or formula???
-                fn += elemt.length;
+            
+            
+            if (num == 1) {
+                if(phantomONE(formula, fn)){
+                    fn += elemt.length
+                }
+                else {
+                    fn += elemt.length + 1
+                }
             } else {
                 fn += elemt.length + num.toString().length;
             };
+                fn += elemt.length + num.length
+            }
         };
     };
     return chem_table
-};
-//var fn = 0;
-//console.log(findnum("NaTH", 3));
-//    startfunction
 function getMr(form){
-    var formula = form,   // input would be here
-        result = 0,
-        end_value = 0,
-        fn = 0,
-        element = ""
-        no_atoms = 0,
-        mr_value = 0;
-        chem_table = elemt_con(formula);
+    chem_table = elemt_con(formula);
     molecularMass_sum = {};
     for (element in chem_table) {
-        no_atoms = parseInt(chem_table[element]);                    //could be wrong
+        no_atoms = parseInt(chem_table[element]);      //could be wrong
+        console.log("element => " + element)
         mr_value = data.elements[element].MolecularMass;
         result = no_atoms * mr_value;
         end_value += result;
     };
     document.getElementById("answerMr").innerHTML = end_value;
 };
-
-
-
 
 //getmr()
