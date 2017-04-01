@@ -7,10 +7,6 @@
 //    file=fs.readFileSync('data.json'),
 //    data=JSON.parse(file);
 
-function xxx() {
-    alert("Hello World")
-}
-
 function findMr() {
     myinput = document.getElementById("inputMr").value;
     getMr(myinput);
