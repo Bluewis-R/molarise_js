@@ -1,15 +1,24 @@
-//      "Molarise.me"       potential name!
+//      Molarise.me       potential name!
 //
 
 //    JSON parsing
-/*
-var fs=require('fs'),
-    file=fs.readFileSync('data.json'),
-    data=JSON.parse(file);
-*/
+
+//var fs=require('fs'),
+//    file=fs.readFileSync('data.json'),
+//    data=JSON.parse(file);
+
+function xxx() {
+    alert("Hello World")
+}
+
+function findMr() {
+    myinput = document.getElementById("inputMr").value;
+    getMr(myinput);
+}
+
 function getData(){
     $(document).ready(function() {
-        $.getJSON('data.json', function(dataJSON) {
+        $.getJSON('/libraries/data.json', function(dataJSON) {
             data = dataJSON;
         });
     });
@@ -51,19 +60,6 @@ function findatom(string, i) {
     };
     return res
 };
-//    finding if there is a 1 after an atom
-function isexcl(string, i){
-    var excl = false,
-        l = i + 1,   
-        m = i + 1;
-    if (isend(string, l-1) == true) {
-        excl = true;
-    };
-    if (isdigit(string, l) != true) {
-      excl = true;
-    };
-    return excl
-};
 // finds the number after the element
 function findnum(string, i) {
     var excl = false,
@@ -84,62 +80,70 @@ function findnum(string, i) {
                 } else {
                     if (isend(string, l+2) == true) {
                         num = 2;
-function findnum(string, i) {
+                    } else {
+                        if (isdigit(string, l+3) != true) {
+                            num = 2;
+                        } else {
+                            num = 3;
+                        };
+                    };
+                };
+            };
+        };
+    };
+    if (excl == true) {
         result = 1;
     } else {
         result = string.substr(i+1, num);
-    };
+    }
     return result
-};
+}
+
 function elemt_con(formula) {
     chem_table = {};
+    fn = 0;
     while (fn < formula.length) {
         elemt = findatom(formula, fn);
         if (elemt == false) {
             fn += 1;
         } else {
-            
             if (elemt.length == 1) {
-                num = findnum(formula, fn);     //  <== FIND NUM
+                num = findnum(formula, fn);             //  <== FIND NUM
             } else {
-                num = findnum(formula, fn+1);   //  <== FIND NUM
+                num = findnum(formula, fn+1);           //  <== FIND NUM
             };
-            
-            
             if (isNaN(chem_table[elemt]) == true){
-                chem_table[elemt] = num;                
-            }
-            else {
-                chem_table[elemt] = parseInt(num) + parseInt(chem_table[elemt]);   
-            }
-            
-            
+                chem_table[elemt] = parseInt(num);
+                
+            } else {
+                chem_table[elemt] = parseInt(num) + parseInt(chem_table[elemt]);
+            };
+            a = Number(elemt.length);
+            b = Number(num.length);
             if (num == 1) {
-                if(phantomONE(formula, fn)){
-                    fn += elemt.length
+                if(isdigit(formula, fn+1) == false) {
+                    fn += a
                 }
                 else {
-                    fn += elemt.length + 1
+                    fn = fn + a + Number(1);            // error here
                 }
             } else {
-                fn += elemt.length + num.toString().length;
+                fn = fn + a + b;
             };
-                fn += elemt.length + num.length
-            }
-        };
+        }
     };
     return chem_table
-function getMr(form){
-    chem_table = elemt_con(formula);
+};
+                    
+function getMr(form) {
+    var end_value = 0;
+    chem_table = elemt_con(form);
     molecularMass_sum = {};
     for (element in chem_table) {
         no_atoms = parseInt(chem_table[element]);      //could be wrong
-        console.log("element => " + element)
         mr_value = data.elements[element].MolecularMass;
         result = no_atoms * mr_value;
         end_value += result;
     };
     document.getElementById("answerMr").innerHTML = end_value;
 };
-
-//getmr()
