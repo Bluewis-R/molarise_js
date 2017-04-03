@@ -1,5 +1,8 @@
 <html>
     <head>
+        <title>MOLARISE.ME</title>
+        <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/line/36/tooth-512.png" type="image/gif" sizes="16x16">
+        
         <script src="myjs.js"></script>
         <script src="molarise.js"></script>
         
@@ -16,21 +19,19 @@
             $(document).ready(function() {
                 $.getJSON('https://raw.githubusercontent.com/Geoff-23/molarise_js/master/data.json', function(dataJSON) {
                     data = dataJSON;
-                });
+                });  
             });
+
         </script>
     </head>
     <body>
-        <div class="container">
-            <form action="">
-                Molecular Formula:
-                <input id="inputMr" type="text" name="firstname" value="OH2"><br>
-                <input type="button" onclick="findMr()" value="GET'n Mr" id="MainButton">
+        <div id="container">
+            <form class="Mrform" action="" onSubmit="return false;">
+                <a class="inputtext" >Molecular Formula:</a>
+                <input id="inputMr" type="text" name="firstname" value="H2O"><br>
+                <input id="getMrButton" type="submit" onclick="findMr()" value="GetMr">
+                <div id="answerMr">Find your Mr</div>
             </form>
-            <div id="answerMr">standard</div>
         </div>
-
-
-
     </body>
 </html>
