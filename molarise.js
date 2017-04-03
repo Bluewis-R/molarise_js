@@ -9,7 +9,6 @@
 
 function findMr() {
     myinput = document.getElementById("inputMr").value;
-    console.log(myinput);
     getMr(myinput);
 }
 
