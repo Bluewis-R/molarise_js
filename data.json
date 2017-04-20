@@ -1,5 +1,7 @@
 {
+  "information": "This is data taken from Lenntech's Molar mass table at: http://www.lenntech.com/periodic/mass/atomic-mass.htm.\n This data was also updated 20.04.17 to change the unnammed elements 112-118 to their now given names and symbols. Also, the mass masses for 110,112-118 were changed with from the wikipediaa pages of their respected elements.",  
   "elements": {
+
     "H": {
         "Name": "Hydrogen",
         "AtomicNumber": 1,
@@ -548,47 +550,55 @@
     "Ds": {
         "Name": "Darmstadtium",
         "AtomicNumber": 110,
-        "MolecularMass": "Unknown"
+        "MolecularMass": 281,
+        "_comment": "This mass data is from wikipedia and is prehaps unreliable"
     },
     "Rg": {
         "Name": "Roentgenium",
         "AtomicNumber": 111,
         "MolecularMass": 272.0
     },
-    "Uub": {
-        "Name": "Ununbium",
+    "Cn": {                            
+        "Name": "Copernicium",
         "AtomicNumber": 112,
-        "MolecularMass": "Unknown"
+        "MolecularMass": 285,
+        "_comment": "This mass data is from wikipedia and is prehaps unreliable"
     },
-    "Uut": {
-        "Name": "Ununtrium",
+    "Nh": {
+        "Name": "Nihonium",
         "AtomicNumber": 113,
-        "MolecularMass": "Unknown"
+        "MolecularMass": 286,
+        "_comment": "This mass data is from wikipedia and is prehaps unreliable"
     },
-    "Uub": {
-        "Name": "Ununquadium",
+    "Fl": {
+        "Name": "Flerovium",
         "AtomicNumber": 114,
-        "MolecularMass": "Unknown"
+        "MolecularMass": 289,
+        "_comment": "This mass data is from wikipedia and is prehaps unreliable"
     },
-    "Uub": {
-        "Name": "Ununpentium",
+    "Mc": {
+        "Name": "Moscovium",
         "AtomicNumber": 115,
-        "MolecularMass": "Unknown"
+        "MolecularMass": 288,
+        "_comment": "This mass data is from wikipedia and is prehaps unreliable"
     },
-    "Uub": {
-        "Name": "Ununhexium",
+    "Lv": {
+        "Name": "Livermorium",
         "AtomicNumber": 116,
-        "MolecularMass": "Unknown"
+        "MolecularMass": 292,
+        "_comment": "This mass data is from wikipedia and is prehaps unreliable"
     },
-    "Uub": {
-        "Name": "Ununseptium",
+    "Ts": {
+        "Name": "Tennessine",
         "AtomicNumber": 117,
-        "MolecularMass": "Unknown"
+        "MolecularMass": 294,
+        "_comment": "This mass data is from wikipedia and is prehaps unreliable"
     },
-    "Uub": {
-        "Name": "Ununoctium",
+    "Og": {
+        "Name": "Oganesson",
         "AtomicNumber": 118,
-        "MolecularMass": "Unknown"
+        "MolecularMass": 294,
+        "_comment": "This mass data is from wikipedia and is prehaps unreliable"
     }
   }
 }
