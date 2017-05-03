@@ -33,35 +33,51 @@ body {
     font-size: 40px;
     color: #0099CC;
 }
+.explanation ul {
+    list-style-type: square;
+}
 .explanation ul li {
     margin-bottom: 3px;
 }
 .explanation ul li a {
-    text-decoration: none;
+    text-decoration: line-through;
     color: #041172; /*#041172*/
 }
 .explanation ul li a:hover {
-    text-decoration: underline;
+    text-decoration: line-through;
+    color: #0099CC; /*#041172*/
+}
+.explanation ul li span {
+    text-decoration: none;
     color: #0099CC; /*#041172*/
 }
 .inputtext {
     font-size: 16px;
-    color: 0099CC;
+    color: #0099CC;
     text-decoration: none;
 }
 .inputtext:hover {
-    color: 0099CC;
     text-decoration: none;
 }
 #inputMr {
+    font-family: 'Raleway', sans-serif;
+    color: #777777;
     width: 155px;
-    padding: 2px 0px 2px 2px;
+    padding: 2px 0px 2px 6px;
 }
 #answerMr {
     margin-top: 12px;
     font-size: 35px;
-    color: #041172;
+    color: #ffffff; /*#041172;*/
     border-bottom: 1px solid black;
+    height: 50px;
+    width: 310px;
+}
+#the_log {
+    position: absolute;
+    color: #F20056;
+    opacity: .9 ;
+    margin: 7px 0px 0px 0px;
     width: 310px;
 }
 #getMrButton {
@@ -69,6 +85,7 @@ body {
     padding: 0 120px 0 120px;
     display: inline-block;
     font-size: 24px;
+    font-family: 'Raleway', sans-serif;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -88,6 +105,7 @@ body {
   transform: translateY(4px);
 }
 .periodic-table {
+    animation: ptable-in 1s;
     position: absolute;
     width: 550px;
     height: 361px;
@@ -98,4 +116,8 @@ body {
 .periodic-table img {
     width: 550px;
     height: auto;
+    transition: all .4s ease-in-out;
+}
+.periodic-table:hover {
+     transform: scale(1.3);
 }

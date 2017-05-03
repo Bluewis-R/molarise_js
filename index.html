@@ -1,34 +1,44 @@
 <html>
     <head>
         <title>MOLARISE.ME</title>
+        <!-- Favicon -->
         <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/line/36/tooth-512.png" type="image/gif" sizes="16x16">
-        
-        <script src="molarise.js"></script>
-        
-        <!-- Jquery, P5, Bootstraps(css, JS) respectivly -->
+        <!-- Javascript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/addons/p5.dom.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!-- Presonal JS -->
         <link rel="stylesheet" href="stylesheet.css">
+        <script src="molarise.js"></script>
+        <!-- Jquery -->
+        
+        <!-- Stylesheet -->
+        
         <script>
-            console.log("loading data!")
             var data = {};
             $(document).ready(function() {
                 $.getJSON('https://raw.githubusercontent.com/Geoff-23/molarise_js/master/data.json', function(dataJSON) {
                     data = dataJSON;
                 });  
             });
+            console.log("loading data!")
+            var former = console.log;
+            console.log = function(msg){
+                former(msg);
+                $("#the_log").append("<div>" + msg + "</div>");
+                $('#answerMr').html("<div>" + "!?#!!?" + "</div>");
+                $('#answerMr').css("color", "#ff0000");
+            };
+            window.onerror = function(message, url, linenumber) {
+                console.log(message);
+            };
         </script>
     </head>
     <body>
         <div id="container">
             <form class="Mrform" action="" onSubmit="return false;">
                 <a class="inputtext" >Molecular Formula:</a>
-                <input id="inputMr" type="text" name="firstname" value="H2O"><br>
+                <input id="inputMr" type="text" onclick="resetinput()" name="firstname" value="?"><br>
                 <input id="getMrButton" type="submit" onclick="findMr()" value="GetMr">
                 <div id="answerMr">Find your Mr</div>
+                <div id="the_log"></div>
             </form>
             <div class="periodic-table">
                 <img src="periodic_table.png"/>
@@ -38,10 +48,11 @@
                 <ul>
                     <li>This app calculates the molecular mass of a molecular formula.</li>
                     <li>Capitalisation DOES matter in Elements.</li>
-                    <li>For SUBSCRIPT numbers in formulas, just use numbers.</li>
-                    <li>If the application seems to have "broken", just refresh<br>the page with F5.</li>
+                    <li>For SUBSCRIPT numbers in formulas, just use ordinary numbers.</li>
+                    <li>If the application seems to have stopped, just refresh<br>the page or press F5.</li>
                     <li>Unfortunatly Brackets in this version of the application<br>aren't recognised at the moment.</li>
-                    <li>If you have the time, could you please fill in this <a href="https://docs.google.com/forms/d/e/1FAIpQLSdS5k6a-JZeYI-bLMwUgO63Gd8qAMkr_ck-s6TD6wTz1dhjnw/viewform?usp=sf_link" target="_blank">FORM</a></li>as to give feed back!
+                    <li>If you have the time, could you please fill in this&ensp;<a href="">FORM</a></li>as to give feed back!
+                    <li>Some exsamples:<span>&emsp;H2SO4&emsp;NaOH&emsp;C6H12O6</span></li>
                 </ul>
             </div>
         </div>

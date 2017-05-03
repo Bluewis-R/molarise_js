@@ -6,10 +6,34 @@
 //var fs=require('fs'),
 //    file=fs.readFileSync('data.json'),
 //    data=JSON.parse(file);
+var inputstart = true;
+
+
 
 function findMr() {
-    myinput = document.getElementById("inputMr").value;
+    myinput = document.getElementById('inputMr').value;
+    
+    if ( myinput == 'lewis' ){                          // easter egg
+        $('body').css("background-color", "#FFDF00");
+        $('body').css("color", "#000000");
+    } else if ( myinput == 'reset' ){
+        $('body').css("background-color", "#2A5673");
+        $('body').css("color", "#D3DDE6");
+    } else {
+    }
+    
+    $( "#the_log" ).empty();
     getMr(myinput);
+    $('#answerMr').css('color','#ffffff')
+
+}
+
+function resetinput() {
+    if (inputstart == true) {
+        inputstart = false;
+        $('#inputMr').val('');
+        $('#answerMr').empty();
+    }
 }
 
 function getData(){
@@ -143,3 +167,6 @@ function getMr(form) {
     };
     document.getElementById("answerMr").innerHTML = end_value;
 };
+
+
+
